@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/formstyle.css" />
+    <title>AirporTransfer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <!-- Airport Transfer Form -->
+                <form action="#" class="sign-in-form">
+                    <h2 class="title">Airport Transfer Booking</h2>
+                    <div class="input-field">
+                        <i class="fas fa-plane"></i>
+                        <select id="chooseAirport" name="chooseAirport" required>
+                            <option value="" disabled selected>Choose Airport</option>
+                            <option value="OTP_Bucharest">OTP - Bucharest Henri Coanda International Airport</option>
+                            <option value="CLJ_Cluj">CLJ - Cluj International Airport</option>
+                            <option value="TSR_Timisoara">TSR - Timisoara Traian Vuia International Airport</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-calendar"></i>
+                        <input type="datetime-local" placeholder="Pickup Date and Time" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Pickup Location" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-plane"></i>
+                        <input type="text" placeholder="Flight Number" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="number" placeholder="Number of Passengers" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-suitcase"></i>
+                        <input type="text" placeholder="Pieces of Luggage" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-comment"></i>
+                        <input type="text" placeholder="Any Special Request" />
+                    </div>
+
+                    <input type="submit" value="REQUEST RIDE" class="btn solid" />
+                </form>
+
+                <!-- General Transfer Form -->
+                <form action="#" class="sign-up-form">
+                    <h2 class="title">General Transfer Booking</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Your Full Name" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" placeholder="Phone Number" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" />
+                    </div>
+
+                    <input type="submit" class="btn" value="REQUEST RIDE" />
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Prefer a General Transfer?</h3>
+                    <p>Book your General Transfer right now!</p>
+                    <button class="btn transparent" id="sign-up-btn">BOOK GENERAL</button>
+                </div>
+                <img src="./assets/img/register.svg" class="image" alt="Register" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Prefer an Airport Transfer?</h3>
+                    <p>Book your Airport Transfer right now!</p>
+                    <button class="btn transparent" id="sign-in-btn">BOOK AIRPORT</button>
+                </div>
+                <img src="./assets/img/login.svg" class="image" alt="Login" />
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/formjs.js"></script>
+</body>
+</html>
