@@ -388,16 +388,12 @@ form.sign-in-form {
 
   }
 
-  form h2.title {
-    display: none;
-  }
-
   .container:before {
     width: 1500px;
     height: 1500px;
     transform: translateX(-50%);
     left: 30%;
-    bottom: 68%;
+    bottom: 75%;
     right: initial;
     top: initial;
     transition: 2s ease-in-out;
@@ -432,9 +428,6 @@ form.sign-in-form {
 }
 
 @media (max-width: 570px) {
-    form h2.title {
-        display: none;
-      }
   form {
     padding: 0 1.5rem;
   }
@@ -450,7 +443,7 @@ form.sign-in-form {
   }
 
   .container:before {
-    bottom: 72%;
+    bottom: 80%;
     left: 50%;
   }
 
@@ -458,5 +451,10 @@ form.sign-in-form {
     bottom: 28%;
     left: 50%;
   }
-}
+
+  .left-panel{
+    margin-bottom: auto;
+  }
+  }
+
 
