@@ -192,6 +192,60 @@ img {
   right: 0;
 }
 
+.home__points,
+    .home__rocket,
+    .home__planet-1,
+    .home__planet-2,
+    .home__cloud-1,
+    .home__cloud-2,
+    .home__content,
+    .home__title img {
+      opacity: 0;
+      transform: translateY(0);
+      transition: opacity 1.5s, transform 1.5s;
+    }
+
+    /* CSS for animation state */
+    .animate .home__points {
+      opacity: 1;
+      transform: translateY(-300px);
+    }
+
+    .animate .home__rocket {
+      opacity: 1;
+      transform: translateY(300px);
+    }
+
+    .animate .home__planet-1 {
+      opacity: 1;
+      transform: translateY(-200px);
+    }
+
+    .animate .home__planet-2 {
+      opacity: 1;
+      transform: translateY(-200px);
+    }
+
+    .animate .home__cloud-1 {
+      opacity: 1;
+      transform: translateY(200px);
+    }
+
+    .animate .home__cloud-2 {
+      opacity: 1;
+      transform: translateY(200px);
+    }
+
+    .animate .home__content {
+      opacity: 1;
+      transform: translateY(-100px);
+    }
+
+    .animate .home__title img {
+      opacity: 1;
+      transform: translateY(100px);
+    }
+
 /*=============== HOME ===============*/
 .home{
   position: relative;
