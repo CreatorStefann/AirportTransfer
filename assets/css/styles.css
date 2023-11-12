@@ -306,13 +306,13 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 300px){
+@media screen and (max-width: 415px){
   .container{
     margin-inline: 1rem;
   }
 
   .home__title{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
 }
