@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--=============== FAVICON ===============-->
-     <link rel="shortcut icon" href="assets/img/airplane-plane-svgrepo-com.svg" type="image/x-icon">
-     <!--=============== REMIXICONS ===============-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
-     <!--=============== CSS ===============-->
-     <link rel="stylesheet" href="./assets/css/styles.css">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/airplane-plane-svgrepo-com.svg" type="image/x-icon">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!--=============== GOOGLE =============-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>AirporTransfer</title>
 </head>
+
 <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-         <nav class="nav container">
+        <nav class="nav container">
             <a href="#" class="nav__logo">
                 <i class="ri-flight-takeoff-line"></i> AirporTransfers
             </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link">Home</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Features</a>
+                        <a href="#features" class="nav__link">Features</a>
                     </li>
 
                     <li class="nav__item">
@@ -37,68 +41,156 @@
                     </li>
                 </ul>
 
-                    <a href="#" class="nav__button">More INFO</a>
-                    <a href="#" class="nav__logo stretch__logo">
-                        <i class="ri-flight-takeoff-line"></i> AirporTransfers
-                    </a>
+                <a href="form.html" class="nav__button">Ride with US!</a>
+                <a href="#" class="nav__logo stretch__logo">
+                    <i class="ri-flight-takeoff-line"></i> AirporTransfers
+                </a>
 
-                    <!-- Close Button -->
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
-            </div>    
+                <!-- Close Button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
 
-                    <!-- Toggle Button -->
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-apps-2-line"></i>
-                    </div>
-         </nav>
+            <!-- Toggle Button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
     </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
-       <!--==================== HOME ====================-->
-       <section class="home">
-          <div class="home__container container">
-            <div class="home__content">
-                <h3 class="home__subtitle">
-                    Seamless Transfers, Scenic Adventures:
-                </h3>
-                <h1 class="home__title">
-                    <span>
-                        Bucharest Airport<br>
-                        Destination: Romania
-                    </span>
-                    <img src="assets/img/line.svg" alt="linie header">
-                </h1>
+        <!--==================== HOME ====================-->
+        <section id="home">
+            <div class="home__container container">
+                <div class="home__content">
+                    <h3 class="home__subtitle">
+                        Seamless Transfers, Scenic Adventures:
+                    </h3>
+                    <h1 class="home__title">
+                        <span>
+                            Bucharest Airport<br>
+                            Destination: Romania
+                        </span>
+                        <img src="assets/img/line.svg" alt="linie header">
+                    </h1>
 
-                <p class="home__description">
-                    Unlock Romania's Beauty:
-                    Your Journey Begins with Bucharest Airport Transfers
-                </p>
+                    <p class="home__description">
+                        Unlock Romania's Beauty:
+                        Your Journey Begins with Bucharest Airport Transfers
+                    </p>
 
-                <a href="./form.html" class="home__button">
-                    Get Started
-                </a>
-            </div>
+                    <a href="#features" class="home__button" id="enlargeButton">
+                        Get Started
+                    </a>
+                </div>
 
-            <div class="home__images">
-                <img src="./assets/img/points-space.svg" alt="image" class="home__points">
-                <!-- <img src="./assets/img/planet.svg" alt="image" class="home__planet-2">
+                <div class="home__images">
+                    <img src="./assets/img/points-space.svg" alt="image" class="home__points">
+                    <!-- <img src="./assets/img/planet.svg" alt="image" class="home__planet-2">
                 <img src="./assets/img/planet.svg" alt="image" class="home__planet-1"> -->
-                <img src="./assets/img/airplane-svgrepo-com(2).svg" alt="image" class="home__rocket">
+                    <img src="./assets/img/airplane-svgrepo-com(2).svg" alt="image" class="home__rocket">
+                </div>
             </div>
-          </div>
 
-          <img src="./assets/img/clouds-1.svg" alt="" class="home__cloud-1">
-          <img src="./assets/img/clouds-2.svg" alt="" class="home__cloud-2">
-       </section>
+            <img src="./assets/img/clouds-1.svg" alt="" class="home__cloud-1">
+            <img src="./assets/img/clouds-2.svg" alt="" class="home__cloud-2">
+        </section>
+        <section id="features">
+            <div class="features__main__container">
+                <div class="features__top">
+                    <h2>Discover Unmatched Luxury and Convenience</h2>
+                    <img src="assets/img/line.svg" alt="linie header">
+                    <p>Embark on a journey where every mile is a testament to luxury, comfort, and unparalleled service.
+                        Our airport transfer experience is more than transportation; it's a symphony of convenience,
+                        style, and personalized care. From the moment you book with us, expect a seamless blend of
+                        efficiency and indulgence that transforms travel into a delightful adventure.</p>
+                </div>
+                <div class="features__container">
+                    <div class="feature__item">
+                        <span class="material-symbols-outlined">directions_car</span>
+                        <div class="featureItem__info">
+                            <h4>Exquisite Interiors</h4>
+                            <p>Immerse yourself in comfort with our vehicles' exquisite interiors, designed for
+                                relaxation and style.</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <span class="material-symbols-outlined">person</span>
+                        <div class="featureItem__info">
+                            <h4>Personalized Service</h4>
+                            <p>Tailored to your preferences, our service goes beyond transportation — it's a
+                                personalized experience crafted just for you.</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <div class="featureItem__info">
+                            <h4>24/7 Availability</h4>
+                            <p>Whether it's an early morning flight or a midnight arrival, our services are available
+                                around the clock to meet your needs.</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <span class="material-symbols-outlined">wifi</span>
+                        <div class="featureItem__info">
+                            <h4>Complementary Wi-Fi</h4>
+                            <p>Stay connected and entertained during your journey with complimentary Wi-Fi and in-car
+                                entertainment options.</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <span class="material-symbols-outlined">emoji_people</span>
+                        <div class="featureItem__info">
+                            <h4>Meet and Greet</h4>
+                            <p>Experience a warm welcome with our meet and greet service, ensuring a smooth transition
+                                from airport to vehicle.</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <span class="material-symbols-outlined">security</span>
+                        <div class="featureItem__info">
+                            <h4>Secure and Reliable</h4>
+                            <p>Your safety is our priority. Benefit from our secure and reliable transportation services
+                                for peace of mind.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature__item">
+                        <span class="material-symbols-outlined">business</span>
+                        <div class="featureItem__info">
+                            <h4>Corporate Travel Solutions</h4>
+                            <p>Elevate your corporate travel experience with our specialized services catering to
+                                business professionals and executives.</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <span class="material-symbols-outlined">child_care</span>
+                        <div class="featureItem__info">
+                            <h4>Child-Friendly Options</h4>
+                            <p>Traveling with little ones? Our child-friendly options ensure a safe and enjoyable
+                                journey for the entire family.</p>
+                        </div>
+                    </div>
+                    <div class="feature__item">
+                        <span class="material-symbols-outlined">house</span>
+                        <div class="featureItem__info">
+                            <h4>Door-to-Door Convenience</h4>
+                            <p>Enjoy the convenience of door-to-door service, eliminating the need for multiple stops
+                                and ensuring a seamless experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    
+
     <!--=============== GSAP ===============-->
     <script src="./assets/js/gsap.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
