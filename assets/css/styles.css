@@ -333,7 +333,7 @@ nav a.active {
   }
 
   .home__title{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
 }
@@ -506,7 +506,7 @@ nav a.active {
 
 .features__top,
 .features__container{
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 .features__top{
@@ -514,7 +514,7 @@ nav a.active {
 }
 
 .features__top h2 {
-  font-size: 2.8rem;
+  font-size: var(--biggest-font-size);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   line-height: 1.2;
@@ -523,11 +523,13 @@ nav a.active {
 
 .features__top p {
   color: hsl(252, 100%, 87%);
-  font-size: 1.1rem;
-  line-height: 2rem;
+  font-size: var(--normal-font-size);
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   padding: 0 5rem;
-  font-weight: 300;
+  
 }
 
 .features__container{
@@ -554,10 +556,10 @@ nav a.active {
 }
 
 .featureItem__info p{
-  font-size: 1.05rem;
+  font-size: var(--normal-font-size);
   color: hsl(252, 100%, 87%);
   line-height: 2rem;
-  font-weight: 200;
+  
 }
 
 @media (max-width: 768px) {
@@ -567,6 +569,10 @@ nav a.active {
 
   .features__container{
     grid-template-columns: 1fr;
+  }
+
+  .featureItem__info p{
+    line-height: 1.5rem;
   }
 }
 
@@ -588,18 +594,19 @@ nav a.active {
 }
 
 .about-text {
+  max-width: 1300px;
   flex: 1;
   text-align: justify;
   color: hsl(252, 100%, 87%);
-  font-size: 1.3rem;
+  /*font-size: 1.3rem;*/
+  font-size: var(--normal-font-size);
   line-height: 2rem;
   margin-bottom: 1rem;
   padding: 0 5rem;
-  font-weight: 300;
 }
 
 .about-text h2{
-  font-size: 2.8rem;
+  font-size: var(--biggest-font-size);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   line-height: 1.2;
@@ -613,17 +620,10 @@ nav a.active {
   margin-right: 20px;
 }
 
-.about-form img{
-  width: 40rem;
-  margin-right: auto;
-  margin-left: auto;
-  filter: invert(55%);
-}
-
 .about-form h2{
   text-align: center;
-  font-size: 2.8rem;
-  margin-top: 0.5rem;
+  font-size: 2.2rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
   line-height: 1.2;
   color: hsl(0, 0%, 100%);
@@ -651,20 +651,18 @@ button {
 }
 
 .title{
-  font-size: 1.4rem;
+  font-size: var(--normal-font-size);
   color: white;
   font-weight: bold;
 }
 
 @media (max-width: 700px) {
   .about-text{
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0 1rem;
+    line-height: 1.7rem;
   }
 
-  .title{
-    font-size: 1rem;
-  }
 }
 
 form button {
@@ -677,7 +675,7 @@ form button {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: rgb(130, 106, 251);
+  background: rgb(174, 161, 236);
 }
 form button:hover {
   background: rgb(88, 56, 250);
@@ -690,11 +688,24 @@ form button:hover {
   line-height: 2rem;
 }
 
+.contact-separat h2{
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
 footer{
   background-color: hsl(268, 42%, 15%);
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  display: grid;
   align-items: center;
   color: white;
-  height: 2rem;
+  height: 2.5rem;
+  font-size: var(--small-font-size);
+}
+
+.flex-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
 }
