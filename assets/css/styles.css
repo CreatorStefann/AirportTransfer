@@ -709,3 +709,65 @@ footer{
   justify-content: space-between;
   gap: 6rem;
 }
+
+hr{
+  color: aliceblue;
+}
+
+  /* Style the container with a rounded border, grey background and some padding and margin */
+.test-container {
+  border: 2px solid aliceblue;
+  background-color: var(--body-color);
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.test-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.test-container p {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal-font-size);
+}
+
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.test-container img {
+  float: left;
+  margin-right: 20px;
+  filter: none;
+  height: 60px;
+  filter: grayscale(100%) /* Convert to grayscale */
+  invert(100%)     /* Invert the grayscale colors (will be blue) */
+  sepia(100%)      /* Apply sepia tone to the inverted colors */
+  saturate(0%)     /* Desaturate to remove any remaining color */
+  brightness(150%) /* Adjust brightness to make it brighter */
+  contrast(150%);  /* Adjust contrast for more vividness */}
+
+/* Increase the font-size of a span element */
+.test-container span {
+  font-size: var(--normal-font-size);
+  margin-right: 15px;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .test-container {
+    text-align: center;
+  }
+
+  .test-container img {
+    margin: auto;
+    margin-bottom: 1rem;
+    float: none;
+    display: block;
+  }
+} 

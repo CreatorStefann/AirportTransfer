@@ -79,3 +79,4 @@ window.addEventListener('scroll', onScroll);
 
 // Initial call to set the active link on page load
 onScroll();
+
