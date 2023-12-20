@@ -80,3 +80,29 @@ window.addEventListener('scroll', onScroll);
 // Initial call to set the active link on page load
 onScroll();
 
+let slideIndex = [0, 0, 0];
+let slideIds = ["mySlides1", "mySlides2", "mySlides3"];
+
+showSlides(0, 0);
+showSlides(0, 1);
+showSlides(0, 2);
+
+function showSlides(index, no) {
+  let i;
+  let slides = document.getElementsByClassName(slideIds[no]);
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex[no]++;
+  if (slideIndex[no] > slides.length) {
+    slideIndex[no] = 1;
+  }
+  slides[slideIndex[no] - 1].style.display = "block";
+
+  // Call showSlides function recursively after 2 seconds
+  setTimeout(function () {
+    showSlides(slideIndex[no], no);
+  }, 2000);
+}
+
+
